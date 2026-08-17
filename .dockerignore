@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.git/
+pb_data/
+pocketbase.exe
+*.log
+.env*.local
+.DS_Store
