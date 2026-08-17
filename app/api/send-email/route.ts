@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
       from: 'GORKAENGLISH <onboarding@resend.dev>',
       to: ['igo2018fr@gmail.com'],
       subject: subject || `New message from ${name}`,
-      reply_to: email,
+      replyTo: email,
       html: `
         <h2>📩 New Message from GORKAENGLISH</h2>
         <p><strong>Name:</strong> ${name}</p>

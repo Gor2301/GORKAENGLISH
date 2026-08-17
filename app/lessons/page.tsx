@@ -37,7 +37,7 @@ export default function LessonsPage() {
         const result = await getLessonPackages();
         
         if (result.success && result.data) {
-          setPackages(result.data as LessonPackage[]);
+          setPackages(result.data as unknown as LessonPackage[]);
         } else {
           setError(result.error || 'Failed to load lesson packages');
         }

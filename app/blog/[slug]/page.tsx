@@ -40,7 +40,7 @@ export default function BlogPostPage({ params }: PageProps) {
         const result = await getBlogPostBySlug(params.slug);
         
         if (result.success && result.data) {
-          setPost(result.data as BlogPost);
+          setPost(result.data as unknown as BlogPost);
         } else {
           setError(result.error || 'Blog post not found');
         }

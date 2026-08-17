@@ -33,7 +33,7 @@ export default function Home() {
         const result = await getTestimonials();
         
         if (result.success && result.data) {
-          setTestimonials(result.data as Testimonial[]);
+          setTestimonials(result.data as unknown as Testimonial[]);
         } else {
           setError(result.error || 'Failed to load testimonials');
         }

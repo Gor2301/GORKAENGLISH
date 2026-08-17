@@ -34,7 +34,7 @@ export default function BlogPage() {
         const result = await getBlogPosts();
         
         if (result.success && result.data) {
-          setPosts(result.data as BlogPost[]);
+          setPosts(result.data as unknown as BlogPost[]);
         } else {
           setError(result.error || 'Failed to load blog posts');
         }
