@@ -15,7 +15,7 @@ export async function sendMessageToGemini(
   try {
     // Using Gemini 3.7 Flash for fast, high-quality responses
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-3.7-flash' 
+      model: 'gemini-3.5-flash-lite' 
     });
 
     const chat = model.startChat({
@@ -41,7 +41,7 @@ export async function getAITutorResponse(
   try {
     // Using Gemini 3.7 Flash for fast, high-quality responses
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-3.7-flash' 
+      model: 'gemini-3.5-flash-lite' 
     });
     
     const prompt = `${context}\n\nStudent: ${message}\n\nTutor:`;

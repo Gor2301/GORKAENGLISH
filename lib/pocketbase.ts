@@ -1,7 +1,7 @@
 import PocketBase from 'pocketbase';
 
-// Use environment variable for the URL
-const POCKETBASE_URL = process.env.POCKETBASE_URL || 'http://127.0.0.1:8090';
+// Use environment variable for the URL (NEXT_PUBLIC_ prefix for browser access)
+const POCKETBASE_URL = process.env.NEXT_PUBLIC_POCKETBASE_URL || 'http://127.0.0.1:8090';
 
 export const pb = new PocketBase(POCKETBASE_URL);
 

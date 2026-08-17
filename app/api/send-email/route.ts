@@ -9,6 +9,8 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, message, subject } = body;
 
+    console.log('📧 Sending emails for:', email);
+
     // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -26,7 +28,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 1. Send email to ADMIN (you)
+    // 1. Send email to ADMIN
     const adminEmail = await resend.emails.send({
       from: 'GORKAENGLISH <onboarding@resend.dev>',
       to: ['igo2018fr@gmail.com'],
@@ -44,7 +46,9 @@ export async function POST(request: NextRequest) {
     });
 
     if (adminEmail.error) {
-      console.error('Admin email error:', adminEmail.error);
+      console.error('❌ Admin email error:', adminEmail.error);
+    } else {
+      console.log('✅ Admin email sent to: igo2018fr@gmail.com');
     }
 
     // 2. Send confirmation email to STUDENT
@@ -79,7 +83,10 @@ export async function POST(request: NextRequest) {
     });
 
     if (studentEmail.error) {
-      console.error('Student email error:', studentEmail.error);
+      console.error('❌ Student email error:', studentEmail.error);
+      console.error('   Failed to send to:', email);
+    } else {
+      console.log('✅ Student confirmation sent to:', email);
     }
 
     return NextResponse.json({
@@ -88,7 +95,7 @@ export async function POST(request: NextRequest) {
     }, { status: 200 });
 
   } catch (error: any) {
-    console.error('Email API error:', error);
+    console.error('❌ Email API error:', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }
