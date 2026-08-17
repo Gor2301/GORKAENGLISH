@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "lessons": "Cursos",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "bookLesson": "Reservar una Clase"
+  },
+  "hero": {
+    "title": "Aprende y Crece con Conversaciones Reales en Inglés",
+    "subtitle": "Gana confianza y fluidez a través de la práctica de conversación real. Aprende de un profesor con experiencia a tu propio ritmo.",
+    "ctaPrimary": "Reserva una Clase de Prueba Gratis",
+    "ctaSecondary": "Contáctanos"
+  },
+  "categories": {
+    "title": "Explora las Categorías de Lecciones",
+    "subtitle": "Encuentra las lecciones adecuadas para tus objetivos",
+    "general": "Inglés General",
+    "generalDesc": "Conversación y fluidez cotidiana",
+    "business": "Inglés de Negocios",
+    "businessDesc": "Comunicación profesional",
+    "exam": "Preparación de Exámenes",
+    "examDesc": "Preparación para IELTS / TOEFL",
+    "kids": "Niños y Adolescentes",
+    "kidsDesc": "Lecciones adaptadas a la edad",
+    "meta": "4 niveles · en vivo + práctica con IA"
+  },
+  "footer": {
+    "description": "Aprende inglés con conversaciones reales. Clases en vivo + Tutor de IA.",
+    "company": "Compañía",
+    "contact": "Contacto",
+    "stayUpdated": "Mantente Actualizado",
+    "newsletter": "Recibe las últimas lecciones y consejos.",
+    "subscribe": "Suscribirse",
+    "emailPlaceholder": "Tu correo electrónico",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "cta": {
+    "title": "Da el Primer Paso – ¡Comienza a Aprender Hoy!",
+    "button": "Reservar Ahora"
+  }
+}

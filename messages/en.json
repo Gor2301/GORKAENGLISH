@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "lessons": "Lessons",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookLesson": "Book a Lesson"
+  },
+  "hero": {
+    "title": "Learn and Grow with Real English Conversations",
+    "subtitle": "Build confidence and fluency through real conversation practice. Learn from an experienced teacher at your own pace.",
+    "ctaPrimary": "Book a Free Trial Lesson",
+    "ctaSecondary": "Contact Us"
+  },
+  "categories": {
+    "title": "Explore Lesson Categories",
+    "subtitle": "Find the right lessons for your goals",
+    "general": "General English",
+    "generalDesc": "Conversation & everyday fluency",
+    "business": "Business English",
+    "businessDesc": "Professional communication",
+    "exam": "Exam Prep",
+    "examDesc": "IELTS / TOEFL preparation",
+    "kids": "Kids & Teens",
+    "kidsDesc": "Age-appropriate lessons",
+    "meta": "4 levels · live + AI practice"
+  },
+  "footer": {
+    "description": "Learn English with real conversations. Live lessons + AI Tutor.",
+    "company": "Company",
+    "contact": "Contact",
+    "stayUpdated": "Stay Updated",
+    "newsletter": "Get the latest lessons and tips.",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Your email",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "cta": {
+    "title": "Take the First Step – Start Learning Today!",
+    "button": "Book Now"
+  }
+}
